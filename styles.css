@@ -1237,3 +1237,17 @@ footer.site-footer a:hover { color: var(--cu-gold); }
 .faculty-card .name a { color: inherit; text-decoration: none; }
 .faculty-card .name a:hover { text-decoration: underline; text-decoration-color: var(--cu-gold-dark); text-underline-offset: 3px; }
 .card.flat .card-body > p:last-child { margin-bottom: 0; }
+
+/* People cards without initials squares: text-first, small round headshot when one exists */
+.faculty-card { display: block; border-top: 3px solid var(--cu-gold); padding: 1.3rem 1.4rem 1.4rem; }
+.faculty-card .head { display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.8rem; }
+.faculty-card .headshot-sm { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; }
+.faculty-card .name { margin: 0 0 0.15rem; }
+.faculty-card .title { margin: 0; }
+.faculty-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.faculty-grid.three { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.lead-person { grid-template-columns: 1fr; }
+@media (min-width: 800px) { .lead-person { grid-template-columns: 160px 1fr; gap: 2.5rem; } }
+.lead-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; display: block; }
+.team-grid.names { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem 1.25rem; }
+.team-grid.names .person { border-top: 1px solid var(--rule); padding-top: 0.7rem; }
