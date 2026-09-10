@@ -1251,3 +1251,7 @@ footer.site-footer a:hover { color: var(--cu-gold); }
 .lead-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; display: block; }
 .team-grid.names { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem 1.25rem; }
 .team-grid.names .person { border-top: 1px solid var(--rule); padding-top: 0.7rem; }
+
+/* Flat card meta row: partner left, date right */
+.card-partner { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem 1rem; flex-wrap: wrap; }
+.card-when { font-weight: 500; color: var(--ink-3); white-space: nowrap; }
