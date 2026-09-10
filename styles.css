@@ -1227,3 +1227,13 @@ footer.site-footer a:hover { color: var(--cu-gold); }
 
 /* Logo mark in the footer */
 .foot-logo { height: 40px; width: auto; display: block; margin-bottom: 0.75rem; }
+
+/* Publication groups by researcher; photo faculty cards */
+.pub-groups { display: grid; gap: 2.5rem; }
+.pub-group h3 { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 0.25rem; }
+.faculty-grid.three { grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+.faculty-grid.three .faculty-card { grid-template-columns: 110px 1fr; }
+.faculty-card .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.faculty-card .name a { color: inherit; text-decoration: none; }
+.faculty-card .name a:hover { text-decoration: underline; text-decoration-color: var(--cu-gold-dark); text-underline-offset: 3px; }
+.card.flat .card-body > p:last-child { margin-bottom: 0; }
