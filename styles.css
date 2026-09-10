@@ -549,15 +549,6 @@ footer.site-footer a:hover { color: var(--cu-gold); }
 }
 
 /* Prototype banner */
-.proto-banner {
-  background: var(--cu-gold);
-  color: var(--ink);
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
 
 /* ============================================ */
 /* Focus area interior page                     */
