@@ -1205,3 +1205,28 @@ footer.site-footer a:hover { color: var(--cu-gold); }
   padding: 0.28rem 0.6rem;
   color: var(--ink-2);
 }
+
+/* Homepage team: round headshots, linked names */
+.person .headshot {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+  background: var(--bg-soft);
+}
+.person .headshot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.person .headshot.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rule);
+  color: var(--ink-3);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+.person .name a { color: inherit; text-decoration: none; }
+.person .name a:hover { text-decoration: underline; text-decoration-color: var(--cu-gold-dark); text-underline-offset: 3px; }
