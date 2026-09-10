@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content-Referenced Growth — CADRE | CU Boulder</title>
+<meta name="description" content="Content-referenced growth (CRG) reporting describes student growth in terms of the skills and understandings a student has gained, not just the points a score went up. A CADRE research-practice partnership with Curriculum Associates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20260910g">
+</head>
+<body>
+
+<div class="proto-banner">PROTOTYPE — design draft for review, not the live CADRE site</div>
+
+<div class="cu-bar">
+  <div class="container">
+    <a href="https://www.colorado.edu/">University of Colorado Boulder</a>
+    <div class="cu-bar-right">
+      <a href="https://www.colorado.edu/education/">School of Education</a>
+      <a href="#">Give</a>
+      <a href="#">Search</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CADRE</span>
+      <span class="brand-sub">Center for Assessment, Design, Research &amp; Evaluation</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" onclick="this.nextElementSibling.classList.toggle('open')">Menu</button>
+    <nav class="primary" id="primary-nav">
+      <a href="index.html#focus">Focus Areas</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero compact">
+  <div class="container">
+    <div>
+      <div class="crumbs">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#projects">Projects</a>
+        <span class="sep">/</span>
+        Content-Referenced Growth
+      </div>
+      <h1>Content-Referenced <span class="accent">Growth</span></h1>
+      <p class="lede">A new way to report what students have learned. Instead of telling a teacher that a score went up 20 points, content-referenced growth describes the change in terms of the skills and understandings a student has gained.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="https://contentreferencedgrowth.shinyapps.io/prototype-public/">Try the fractions prototype</a>
+        <a class="btn btn-ghost" href="https://doi.org/10.1080/10627197.2025.2503288">Read the 2025 paper</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="area-overview">
+      <div>
+        <span class="eyebrow">Overview</span>
+        <p class="lead-text">A 20-point gain tells a teacher that a student grew. It doesn't say in what.</p>
+        <p class="body-text">Most growth reports are norm-referenced or criterion-referenced: they tell you where a student stands relative to peers, or whether a target was met. Content-referenced growth (CRG) reporting takes a different approach. It anchors a test's score scale to a learning progression, so that a change in score can be read as a change in how a student thinks about a topic, illustrated in concrete terms by the kinds of items the student can now answer.</p>
+        <p class="body-text">CADRE has been developing CRG reporting since 2020 in a research-practice partnership with Curriculum Associates, using the i-Ready Diagnostic. The work has produced learning progressions in mathematics and reading, an interactive reporting prototype, a series of teacher studies, and a 2025 article in <em>Educational Assessment</em>.</p>
+      </div>
+      <aside class="questions facts" aria-label="Project at a glance">
+        <h4>At a glance</h4>
+        <ul>
+          <li><strong>Partner</strong><span>Curriculum Associates, in a research-practice partnership</span></li>
+          <li><strong>Assessment</strong><span>i-Ready Diagnostic, mathematics and reading</span></li>
+          <li><strong>Since</strong><span>2020</span></li>
+          <li><strong>Lead</strong><span>Derek C. Briggs, principal investigator</span></li>
+          <li><strong>Progressions</strong><span>Fractions, ratios, functions, spatial measurement, phonics knowledge</span></li>
+          <li><strong>Status</strong><span>Interactive prototype in pilot testing with teachers</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The idea in two minutes</span>
+      <h2>From scores to skills.</h2>
+      <p>An animated walk-through of content-referenced growth: why a 60-point gain says so little on its own, how a score scale is mapped to learning progression levels, and what a teacher sees when one student's trajectory is read both ways.</p>
+    </div>
+
+    <div class="video-wide">
+      <video id="crg-video" controls preload="metadata" playsinline poster="media/crg-animation-poster.jpg" width="1920" height="1080" aria-label="Content-referenced growth: an animated overview">
+        <source src="media/crg-animation.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="media/crg-animation.mp4">Download the video</a> instead.
+      </video>
+      <div class="video-meta">
+        <span>2 min 20 s · Silent, with on-screen captions · Made with Claude Design. Jump to a chapter:</span>
+        <span class="fig-links"><a href="media/crg-animation.mp4" download="CRG-Animation.mp4">Download video (14 MB)</a></span>
+      </div>
+      <ol class="chapters" aria-label="Video chapters">
+        <li><button type="button" data-t="0"><span class="t">0:00</span>Opening</button></li>
+        <li><button type="button" data-t="8"><span class="t">0:08</span>The problem: +60 points</button></li>
+        <li><button type="button" data-t="22"><span class="t">0:22</span>Mapping the scale to levels</button></li>
+        <li><button type="button" data-t="34"><span class="t">0:34</span>Four fractions levels</button></li>
+        <li><button type="button" data-t="50"><span class="t">0:50</span>Evidence from item difficulty</button></li>
+        <li><button type="button" data-t="64"><span class="t">1:04</span>Class view</button></li>
+        <li><button type="button" data-t="82"><span class="t">1:22</span>One student's trajectory</button></li>
+        <li><button type="button" data-t="102"><span class="t">1:42</span>Inside a level</button></li>
+        <li><button type="button" data-t="116"><span class="t">1:56</span>The reframe</button></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What changes for teachers and families</span>
+      <h2>The same growth, described two ways.</h2>
+    </div>
+
+    <div class="compare">
+      <div class="before">
+        <span class="tag">Before</span>
+        <blockquote>“Your child grew 60 points in math.”</blockquote>
+        <p>A norm- or target-referenced report. It says that growth happened, and perhaps whether it was enough, but not what the student can do now that they couldn't before.</p>
+      </div>
+      <div class="after">
+        <span class="tag">After</span>
+        <blockquote>“Your child has progressed from a ‘part-whole’ view of fractions to understanding them on a number line.”</blockquote>
+        <p>A content-referenced report. The same score change, read against a learning progression, becomes a statement about how the student's thinking has developed and what comes next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Four building blocks.</h2>
+      <p>CRG reporting rests on four elements that have to be designed together.</p>
+    </div>
+
+    <div class="themes-grid">
+      <div class="theme">
+        <div class="icon" aria-hidden="true">1</div>
+        <h3>Learning Progression</h3>
+        <p>A research-based description of the successively more sophisticated ways students think about a topic, organized into levels that mark significant steps in understanding.</p>
+      </div>
+      <div class="theme">
+        <div class="icon" aria-hidden="true">2</div>
+        <h3>Targeted Test Design</h3>
+        <p>Tests whose item content overlaps across occasions and grades, so that a common scale can be established and each progression level is represented by enough items.</p>
+      </div>
+      <div class="theme">
+        <div class="icon" aria-hidden="true">3</div>
+        <h3>Vertical Scale (Rasch Model)</h3>
+        <p>Occasion-specific tests are placed on a single vertical scale. The Rasch model's invariance property keeps distances along the scale interpretable regardless of which items a student saw.</p>
+      </div>
+      <div class="theme">
+        <div class="icon" aria-hidden="true">4</div>
+        <h3>Item Mapping</h3>
+        <p>Exemplar items are located on the scale and linked to progression levels, so that a numerical distance can be read as an instructionally meaningful difference in understanding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Theory of action</span>
+      <h2>From a reporting interface to student learning.</h2>
+      <p>The building blocks matter only if they change what teachers infer and do. This is the chain of reasoning the project is designed to test.</p>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step">
+        <h3>Reporting interface</h3>
+        <p>Built on the learning progression, test design, Rasch scale, and item map.</p>
+      </div>
+      <div class="flow-step">
+        <h3>Educator interaction</h3>
+        <p>Teachers explore a student's status and growth against progression levels and exemplar items.</p>
+      </div>
+      <div class="flow-step">
+        <h3>Inferences about learning</h3>
+        <p>Score changes are interpreted as changes in thinking, not as points gained.</p>
+      </div>
+      <div class="flow-step">
+        <h3>Changes in instruction</h3>
+        <p>Teachers make conceptual, not just procedural, adjustments and group students by what they need next.</p>
+      </div>
+      <div class="flow-step goal">
+        <h3>Student learning outcomes</h3>
+        <p>The end goal, with teacher professional learning and attitudes about assessment as secondary outcomes.</p>
+      </div>
+    </div>
+    <p class="flow-note">Professional development supports the interaction and inference steps. The interface is meant as a starting point for inquiry about a student's thinking, not a diagnosis.</p>
+  </div>
+</section>
+
+<section class="block block-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">CRG in action</span>
+      <h2>A learning progression for fractions.</h2>
+      <p>The first prototype is built around four increasingly sophisticated ways of understanding a fraction. Each level is anchored to i-Ready Diagnostic items whose difficulty rises with the level.</p>
+    </div>
+
+    <ol class="levels">
+      <li class="level">
+        <div class="num">1</div>
+        <h3>Part-Whole</h3>
+        <p class="alias">A number of parts out of a total</p>
+        <p>A fraction is some number of equal parts out of a whole, often understood through visual models such as a partitioned shape.</p>
+      </li>
+      <li class="level">
+        <div class="num">2</div>
+        <h3>Quotient</h3>
+        <p class="alias">“Fair shares”</p>
+        <p>A fraction represents the division of a whole into equal shares, so three-fourths is three things shared fairly among four.</p>
+      </li>
+      <li class="level">
+        <div class="num">3</div>
+        <h3>Measurement</h3>
+        <p class="alias">“Number line”</p>
+        <p>Fractions are magnitudes that can be located on a number line. This is where equivalent fractions become meaningful, a prerequisite for adding fractions with unlike denominators.</p>
+      </li>
+      <li class="level">
+        <div class="num">4</div>
+        <h3>Operator</h3>
+        <p class="alias">“Multiply and divide”</p>
+        <p>A fraction transforms an original value into a new, proportionally related value through multiplication and division.</p>
+      </li>
+    </ol>
+
+    <div class="section-foot">
+      <a class="btn btn-dark" href="https://contentreferencedgrowth.shinyapps.io/prototype-public/">Explore the interactive fractions prototype</a>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Prototypes</span>
+      <h2>Five progressions, one common scale.</h2>
+      <p>Prototypes now exist for four mathematics progressions and one in reading. Because the i-Ready Diagnostic places every grade on one vertical scale, the levels of different progressions can be located side by side.</p>
+    </div>
+
+    <figure class="figure-wide">
+      <picture>
+        <source type="image/webp" srcset="images/crg-prototypes-scale.webp">
+        <img src="images/crg-prototypes-scale.jpg" width="1600" height="833" loading="lazy" alt="Chart locating the levels of four mathematics learning progressions on the i-Ready score scale. Fractions: Part Whole, Fair Share, Number Line, Operations. Ratios: Attempt to Quantify, Whole Number Multiples, Unit Rates, Flexible Reasoning. Functions: Patterns, Formulas, Rules, Features, Objects. Measurement: Visual, Simple Units, Composites, Abstraction. A grade-level axis from 0 to 10 runs along the right side, and arrows connect related levels across progressions.">
+      </picture>
+      <figcaption>
+        <span>Levels of the fractions, ratios, functions, and spatial measurement progressions located on the i-Ready Diagnostic vertical scale, with approximate grade levels at right. Arrows connect related levels across progressions.</span>
+      </figcaption>
+    </figure>
+
+    <div class="methods-grid" style="margin-top:1.75rem">
+      <div class="method-pill">
+        <strong>Fractions</strong>
+        <span>Mathematics · Interactive prototype available</span>
+      </div>
+      <div class="method-pill">
+        <strong>Ratios</strong>
+        <span>Mathematics</span>
+      </div>
+      <div class="method-pill">
+        <strong>Functions</strong>
+        <span>Mathematics</span>
+      </div>
+      <div class="method-pill">
+        <strong>Spatial Measurement</strong>
+        <span>Mathematics</span>
+      </div>
+      <div class="method-pill">
+        <strong>Phonics Knowledge</strong>
+        <span>Reading, K–3 · Levels: partial, complete, consolidated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What we've learned so far</span>
+      <h2>Early evidence from the fractions prototype.</h2>
+    </div>
+
+    <div class="stats four">
+      <div class="stat"><div class="num">0.68</div><div class="label">Rank correlation between the order of i-Ready Classroom Mathematics lessons and the progression level of the skills they assess</div></div>
+      <div class="stat"><div class="num">0.60</div><div class="label">Rank correlation between item difficulty and progression level, with differences holding after controlling for grade</div></div>
+      <div class="stat"><div class="num">7</div><div class="label">Experienced i-Ready teachers in think-aloud sessions with the fractions prototype</div></div>
+      <div class="stat"><div class="num">6 <small>of 7</small></div><div class="label">Saw the prototype as useful for grouping students for targeted instruction</div></div>
+    </div>
+
+    <div class="themes-grid">
+      <div class="theme">
+        <div class="icon" aria-hidden="true">✓</div>
+        <h3>Teachers made the connection</h3>
+        <p>Teachers connected scale scores to progression levels and to the kinds of problems students at each level could solve. All of them understood the hierarchy of levels, though some questioned the grain size of particular levels.</p>
+      </div>
+      <div class="theme">
+        <div class="icon" aria-hidden="true">↻</div>
+        <h3>Habits are sticky</h3>
+        <p>Some teachers first fell back on numerical growth targets before shifting to content-referenced interpretations. Professional development is part of the design, not an afterthought.</p>
+      </div>
+      <div class="theme">
+        <div class="icon" aria-hidden="true">★</div>
+        <h3>Three uses emerged</h3>
+        <p>Grouping students for instruction, explaining progress to parents and students in conferences, and deepening teachers' own content knowledge, especially for newer teachers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Read, listen, try</span>
+      <h2>Resources.</h2>
+    </div>
+
+    <div class="card-row four">
+      <a class="card" href="https://doi.org/10.1080/10627197.2025.2503288">
+        <div class="thumb"><span class="thumb-label">Journal article</span></div>
+        <div class="card-body">
+          <div class="card-meta"><em>Educational Assessment</em> · 2025</div>
+          <h3>Visualizing and Reporting Content-Referenced Growth on a Learning Progression</h3>
+          <p>The full framework, the fractions pilot with teachers, and the validity argument for CRG interpretations.</p>
+          <span class="card-cta">Read the article</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.colorado.edu/cadre/media/377">
+        <div class="thumb alt-3"><span class="thumb-label">Pre-print</span></div>
+        <div class="card-body">
+          <div class="card-meta">PDF · Open access</div>
+          <h3>Pre-print of the 2025 article</h3>
+          <p>The accepted manuscript, free to download and share.</p>
+          <span class="card-cta">Download the pre-print</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.colorado.edu/cadre/media/376">
+        <div class="thumb alt-1"><span class="thumb-label">Executive summary</span></div>
+        <div class="card-body">
+          <div class="card-meta">PDF · AI-generated</div>
+          <h3>Executive summary</h3>
+          <p>A short AI-generated summary of the paper for readers who want the gist.</p>
+          <span class="card-cta">Read the summary</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.dropbox.com/scl/fi/knp2gmhab6utwp9e3qq5k/Content-Referenced-Growth.wav?rlkey=vllbb77odoqbkfw2y2unq920m&e=1&st=6towr6ny&dl=0">
+        <div class="thumb alt-4"><span class="thumb-label">Audio overview</span></div>
+        <div class="card-body">
+          <div class="card-meta">17 minutes · AI-generated</div>
+          <h3>Listen to an overview</h3>
+          <p>An AI-generated audio conversation about the paper, for the commute.</p>
+          <span class="card-cta">Listen</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Research reports</span>
+      <h2>Working papers and technical reports.</h2>
+      <p>The learning progressions, teacher studies, and related analyses behind the prototype.</p>
+    </div>
+
+    <ul class="pub-list">
+      <li>
+        <span class="pub-meta">2025 · Article</span>
+        <span class="pub-title">Visualizing and reporting content-referenced growth on a learning progression</span>
+        <span class="pub-authors">Briggs, D. C., McClure, K., Student, S., Wellberg, S., Minchen, N., Cox, O., Whitfield, E., Buchbinder, N., &amp; Davis, L.</span>
+        <span class="pub-venue"><em>Educational Assessment</em> · <a href="https://doi.org/10.1080/10627197.2025.2503288">Read paper</a> · <a href="https://www.colorado.edu/cadre/media/377">Pre-print</a></span>
+      </li>
+      <li>
+        <span class="pub-meta">2023 · Working paper</span>
+        <span class="pub-title">Big ideas in the understanding of fractions: A learning progression</span>
+        <span class="pub-authors">Wellberg, S., Briggs, D. C., &amp; Student, S. R.</span>
+        <span class="pub-venue">CADRE, University of Colorado Boulder, March 2023 · <a href="https://www.colorado.edu/cadre/sites/default/files/attached-files/wbs_cadre_report_fractions76.pdf">Read report</a></span>
+      </li>
+      <li>
+        <span class="pub-meta">2023 · Report</span>
+        <span class="pub-title">Development of a reading foundational skills learning progression</span>
+        <span class="pub-authors">Cox, O., &amp; Briggs, D. C.</span>
+        <span class="pub-venue">CADRE, University of Colorado Boulder, December 2023 · <a href="https://www.colorado.edu/cadre/sites/default/files/attached-files/development_of_a_reading_foundational_skills_learning_progression_2023.pdf">Read report</a></span>
+      </li>
+      <li>
+        <span class="pub-meta">2023 · Report</span>
+        <span class="pub-title">Teacher perspectives on the content-referenced growth reporting prototype: Findings from interviews</span>
+        <span class="pub-authors">Briggs, D. C., Cox, O., Student, S., &amp; Whitfield, E.</span>
+        <span class="pub-venue">CADRE, University of Colorado Boulder · <a href="https://www.colorado.edu/cadre/sites/default/files/attached-files/teacher_perspectives_on_the_content-referenced_growth_reporting_prototype-_findings_from_interviews-2023.pdf">Read report</a></span>
+      </li>
+      <li>
+        <span class="pub-meta">2023 · Report</span>
+        <span class="pub-title">Teacher reactions to the phonics content referenced growth reporting prototype: Findings from interviews</span>
+        <span class="pub-authors">Buchbinder, N., Cox, O., &amp; Whitfield, E.</span>
+        <span class="pub-venue">CADRE, University of Colorado Boulder, December 2023 · <a href="https://www.colorado.edu/cadre/sites/default/files/attached-files/teacher_reactions_to_the_phonics_content_referenced_growth_reporting_prototype-_findings_from_interviews-2023.pdf">Read report</a></span>
+      </li>
+      <li>
+        <span class="pub-meta">2022 · Related</span>
+        <span class="pub-title">Evidence of “summer learning loss” on the i-Ready Diagnostic assessment</span>
+        <span class="pub-authors">Briggs, D. C., &amp; Wellberg, S.</span>
+        <span class="pub-venue">CADRE, University of Colorado Boulder · <a href="https://www.colorado.edu/cadre/2022/09/27/evidence-summer-learning-loss-i-ready-diagnostic-assessment">Read report</a></span>
+      </li>
+      <li>
+        <span class="pub-meta">2022 · Related</span>
+        <span class="pub-title">Gain scores and the regression fallacy</span>
+        <span class="pub-authors">Briggs, D. C.</span>
+        <span class="pub-venue">CADRE Newsletter · <a href="https://www.colorado.edu/cadre/gain-scores-and-regression-fallacy">Read essay</a></span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Research team</span>
+      <h2>Who's doing the work.</h2>
+    </div>
+
+    <div class="lead-person">
+      <div class="photo" aria-hidden="true">DB</div>
+      <div>
+        <h3>Derek C. Briggs</h3>
+        <p class="title">Principal Investigator · Director, CADRE · Professor, Research &amp; Evaluation Methodology</p>
+        <p>Briggs has spent two decades studying how growth is measured and reported: the design of vertical scales, the interpretation of the Rasch model's unit, and the use of learning progressions to give scale scores qualitative meaning. Content-referenced growth brings those threads together in a reporting tool built with and for teachers.</p>
+        <div class="lead-links">
+          <a href="https://www.colorado.edu/education/derek-briggs">CU Boulder profile</a>
+          <a href="educational-measurement.html">Educational Measurement at CADRE</a>
+          <a href="mailto:cadre@colorado.edu">Contact the project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:3rem">
+      <span class="eyebrow">Graduate student researchers</span>
+      <p>Doctoral researchers in Research and Evaluation Methodology who developed the progressions, built the prototypes, and led the teacher studies. Listed alphabetically.</p>
+    </div>
+    <div class="team-grid six">
+      <div class="person"><div class="avatar">NB</div><p class="name">Nicolás Buchbinder</p><p class="role">Phonics prototype · Teacher studies</p></div>
+      <div class="person"><div class="avatar">OC</div><p class="name">Olivia Cox</p><p class="role">Reading foundational skills progression</p></div>
+      <div class="person"><div class="avatar">KM</div><p class="name">Kyla McClure</p><p class="role">Reporting interface · 2025 article</p></div>
+      <div class="person"><div class="avatar">SS</div><p class="name">Sandy Student</p><p class="role">Fractions progression · Vertical scaling</p></div>
+      <div class="person"><div class="avatar">SW</div><p class="name">Sarah Wellberg</p><p class="role">Fractions progression</p></div>
+      <div class="person"><div class="avatar">EW</div><p class="name">Erik Whitfield</p><p class="role">Teacher studies</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently asked.</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>How is CRG different from norm-referenced and criterion-referenced reporting?</summary>
+        <div class="answer">
+          <p>Norm-referenced reports locate a student relative to peers, for example at the 60th percentile. Criterion-referenced reports compare a score to a target, for example “met the annual growth goal.” Both are useful for monitoring, and neither says much about what the student has learned.</p>
+          <p>CRG reporting uses qualitative distinctions among assessment items to interpret numerical distances along a score scale. Because the items are mapped to the levels of a learning progression, a change in score can be described as movement from one way of thinking about a topic to a more sophisticated one. The intent is formative: to give teachers a starting point for conceptual, rather than only procedural, adjustments to instruction.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>How was the fractions learning progression validated?</summary>
+        <div class="answer">
+          <p>Two kinds of evidence support the progression's structure. First, the order in which i-Ready Classroom Mathematics lessons introduce fractions skills correlates with the progression level of those skills (rank correlation of 0.68). Second, the difficulty of i-Ready Diagnostic items correlates with their progression level (rank correlation of 0.60), and the difference in difficulty across levels holds after controlling for grade. Item difficulty distributions overlap at adjacent levels, but the overall trend supports the ordering.</p>
+          <p>The underlying working paper proposes five interpretations of a fraction, adding ratio/rate between measurement and operator. The reporting prototype presents four levels.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>What did teachers do with the prototype?</summary>
+        <div class="answer">
+          <p>Seven teachers experienced with i-Ready worked through the fractions prototype in think-aloud sessions. They connected scale scores to progression levels and to the problem types students at each level could handle. Some began with their existing, target-based interpretation of i-Ready growth and then moved to content-referenced interpretations; all understood the hierarchy of levels, though some questioned the grain size of particular levels.</p>
+          <p>Three uses came up repeatedly:</p>
+          <ul>
+            <li><strong>Instructional grouping.</strong> Six of seven teachers saw the prototype as a way to form groups for targeted work on fractions.</li>
+            <li><strong>Communicating with families and students.</strong> Three teachers described using it in conferences to explain what a score means in terms of specific learning milestones.</li>
+            <li><strong>Professional learning.</strong> Five teachers saw it as a way to deepen their own content knowledge, especially for newer teachers or those less familiar with mathematics standards.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>What would make CRG interpretations more trustworthy?</summary>
+        <div class="answer">
+          <ul>
+            <li><strong>Professional development.</strong> Teachers need support to move from a “count up points” mindset to a focus on qualitative changes in reasoning, so that CRG is used for its intended formative purposes.</li>
+            <li><strong>Careful exemplar items.</strong> The items chosen to represent a level shape how teachers read it. Selecting items that represent the most cognitively demanding application of a level's conceptualization, or showing three to four items per level, would better convey the variability within a level.</li>
+            <li><strong>Better item formats.</strong> The i-Ready Diagnostic relies mostly on selected-response items. Open-ended tasks, ordered multiple-choice formats, or AI-supported interactive tasks would reveal student thinking more directly.</li>
+            <li><strong>Triangulation.</strong> CRG results should serve as a starting point for inquiry, not a diagnosis. Teachers should check them against evidence from classroom tasks that are not subject to the constraints of standardized items.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary>What's next for the project?</summary>
+        <div class="answer">
+          <ul>
+            <li><strong>Real data trials.</strong> Observing teachers using the interface with their actual students rather than hypothetical ones.</li>
+            <li><strong>Impact on inferences and actions.</strong> Investigating empirically whether the interface leads teachers to the intended instructional inferences and subsequent actions.</li>
+            <li><strong>Outcomes.</strong> Evaluating whether CRG influences teacher attitudes toward assessment, instructional practice, and ultimately student learning.</li>
+            <li><strong>Scale invariance.</strong> Testing whether vertical scales maintain the generalizability and interpretability of reference distances across grades and forms.</li>
+          </ul>
+          <p>Learning is messy. CRG is designed to generate substantive questions for teachers rather than to hand them answers, and to foster deeper engagement with how students' understanding develops.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>Where does the idea come from?</summary>
+        <div class="answer">
+          <p>Two main inspirations: the item maps published with the <a href="https://www.nationsreportcard.gov/itemmaps/?subj=MAT&amp;grade=4&amp;year=2022">National Assessment of Educational Progress</a>, and two decades of research on learning progressions and trajectories.</p>
+          <ul>
+            <li>Alonzo, A. C., &amp; Gotwals, A. W. (Eds.). (2012). <em>Learning progressions in science: Current challenges and future directions</em>. SensePublishers.</li>
+            <li>Briggs, D. C., &amp; Peck, F. A. (2015). Using learning progressions to design vertical scales that support coherent inferences about student growth. <em>Measurement: Interdisciplinary Research &amp; Perspectives</em>, 13, 75–99. <a href="https://doi.org/10.1080/15366367.2015.1042814">doi</a></li>
+            <li>Briggs, D. C. (2019). Interpreting and visualizing the unit of measurement in the Rasch model. <em>Measurement</em>, 46, 961–971. <a href="https://doi.org/10.1016/j.measurement.2019.07.035">doi</a></li>
+            <li>Clements, D. H., &amp; Sarama, J. (2004). Learning trajectories in mathematics education. <em>Mathematical Thinking and Learning</em>, 6(2), 81–89. <a href="https://doi.org/10.1207/s15327833mtl0602_1">doi</a></li>
+            <li>Wilson, M. (2023). <em>Constructing measures: An item response modeling approach</em> (2nd ed.). Routledge.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container">
+    <div>
+      <h2>Interested in content-referenced reporting for your assessment?</h2>
+      <p>CADRE partners with assessment developers, states, and districts to design learning progressions, map items to them, and build growth reports that teachers can act on.</p>
+    </div>
+    <div>
+      <a class="btn btn-gold" href="mailto:cadre@colorado.edu">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>CADRE</h4>
+        <p style="margin:0 0 0.5rem">Center for Assessment,<br>Design, Research &amp; Evaluation</p>
+        <p style="margin:0;color:#8a877f;font-size:0.86rem">School of Education<br>University of Colorado Boulder<br>249 UCB, Boulder, CO 80309</p>
+      </div>
+      <div>
+        <h4>Focus Areas</h4>
+        <ul>
+          <li><a href="classroom-assessment.html">Classroom Assessment</a></li>
+          <li><a href="educational-measurement.html">Educational Measurement</a></li>
+          <li><a href="accountability.html">Accountability</a></li>
+          <li><a href="higher-education.html">Higher Education</a></li>
+          <li><a href="program-evaluation.html">Program Evaluation</a></li>
+          <li><a href="technical-advice.html">Technical Advice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#publications">Publications</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#news">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:cadre@colorado.edu">cadre@colorado.edu</a></li>
+          <li><a href="#">Subscribe to the newsletter</a></li>
+          <li><a href="https://www.colorado.edu/education/">CU Boulder School of Education</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Regents of the University of Colorado &middot; CADRE</span>
+      <span>
+        <a href="https://www.colorado.edu/about/privacy-statement">Privacy</a> &middot;
+        <a href="https://www.colorado.edu/about/legal-trademarks">Legal &amp; Trademarks</a> &middot;
+        <a href="https://www.colorado.edu/map">Campus Map</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var v=document.getElementById('crg-video'); if(!v) return;
+  var btns=Array.prototype.slice.call(document.querySelectorAll('.chapters button'));
+  btns.forEach(function(b){ b.addEventListener('click',function(){ v.currentTime=+b.dataset.t; v.play(); }); });
+  v.addEventListener('timeupdate',function(){
+    var cur=null; btns.forEach(function(b){ if(v.currentTime>=+b.dataset.t) cur=b; });
+    btns.forEach(function(b){ b.classList.toggle('current', b===cur); });
+  });
+})();
+</script>
+</body>
+</html>
