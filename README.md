@@ -7,6 +7,7 @@ Plain HTML and CSS, no build step. Edit a page, commit, push; GitHub Pages publi
 - `index.html` — homepage
 - `classroom-assessment.html`, `educational-measurement.html`, `accountability.html`, `higher-education.html`, `program-evaluation.html`, `technical-advice.html` — focus-area pages
 - `crg.html` — Content-Referenced Growth project page
+- `how-to-edit.html` — editing guide for CADRE staff (unlinked; https://cadre-cu.github.io/how-to-edit.html)
 - `styles.css` — shared stylesheet (bump the `?v=` query on the `<link>` tags after editing it so browsers fetch the new version)
 - `images/`, `media/` — optimized images and the CRG video
 

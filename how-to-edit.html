@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Edit the CADRE Website</title>
+<meta name="description" content="A guide for CADRE staff and faculty partners: four ways to update pages on the CADRE website and how changes get published.">
+<link rel="icon" type="image/png" sizes="64x64" href="images/logo/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20260910o">
+<style>
+  .guide-toc { background: #fff; border: 1px solid var(--rule); border-left: 4px solid var(--cu-gold); padding: 1.25rem 1.5rem; }
+  .guide-toc h4 { font-family: var(--serif); margin: 0 0 0.6rem; font-size: 1.05rem; }
+  .guide-toc ol { margin: 0; padding-left: 1.2rem; }
+  .guide-toc li { margin: 0.3rem 0; }
+  .guide-toc a { color: var(--ink); text-decoration: none; }
+  .guide-toc a:hover { text-decoration: underline; text-decoration-color: var(--cu-gold-dark); text-underline-offset: 3px; }
+  .prose { max-width: 760px; }
+  .prose p, .prose li { color: var(--ink-2); }
+  .prose h3 { font-family: var(--serif); font-size: 1.25rem; margin: 2rem 0 0.6rem; }
+  .prose code, .steps code, .callout code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; background: var(--bg-soft); border: 1px solid var(--rule); padding: 0.08em 0.4em; }
+  pre { background: var(--ink); color: #f1efe8; padding: 1rem 1.2rem; overflow-x: auto; font-size: 0.9rem; line-height: 1.5; margin: 0.75rem 0 1.25rem; }
+  pre code { background: none; border: 0; padding: 0; color: inherit; }
+  .steps { list-style: none; margin: 1.25rem 0 0; padding: 0; counter-reset: step; max-width: 760px; }
+  .steps li { position: relative; padding: 0 0 1.25rem 3rem; counter-increment: step; }
+  .steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--ink); color: var(--cu-gold); font-family: var(--serif); font-weight: 700; }
+  .steps li strong { display: block; font-family: var(--serif); font-size: 1.05rem; margin-bottom: 0.2rem; }
+  .steps li p { margin: 0; color: var(--ink-2); }
+  .callout { background: #fff; border: 1px solid var(--rule); border-left: 4px solid var(--cu-gold); padding: 1rem 1.25rem; margin: 1.5rem 0; max-width: 760px; }
+  .callout strong { font-family: var(--serif); }
+  .callout p { margin: 0.35rem 0 0; color: var(--ink-2); }
+  .fit { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 1.5rem; }
+  @media (min-width: 760px) { .fit { grid-template-columns: repeat(2, 1fr); } }
+  .fit .option { background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--cu-gold); padding: 1.3rem 1.4rem; }
+  .fit .option h3 { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 0.35rem; }
+  .fit .option .for { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; margin-bottom: 0.6rem; }
+  .fit .option p { margin: 0 0 0.6rem; color: var(--ink-2); font-size: 0.95rem; }
+  .fit .option a { color: var(--cu-gold-dark); font-weight: 700; text-decoration: none; font-size: 0.9rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  table.files { width: 100%; border-collapse: collapse; font-size: 0.95rem; max-width: 760px; }
+  table.files th, table.files td { text-align: left; padding: 0.55rem 0.75rem 0.55rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.files th { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
+  table.files td:first-child { white-space: nowrap; }
+  .glossary dt { font-family: var(--serif); font-weight: 700; margin-top: 0.9rem; }
+  .glossary dd { margin: 0.15rem 0 0; color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<div class="cu-bar">
+  <div class="container">
+    <a href="https://www.colorado.edu/">University of Colorado Boulder</a>
+    <div class="cu-bar-right">
+      <a href="https://www.colorado.edu/education/">School of Education</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="images/logo/cadre-mark.png" alt="" width="480" height="201">
+      <span class="brand-text">
+        <span class="brand-mark">CADRE</span>
+        <span class="brand-sub">Website editing guide</span>
+      </span>
+    </a>
+    <nav class="primary" id="primary-nav">
+      <a href="index.html">Back to the site</a>
+      <a href="https://github.com/CADRE-CU/CADRE-CU.github.io">Repository on GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero compact">
+  <div class="container">
+    <div>
+      <div class="crumbs">For CADRE staff and faculty partners</div>
+      <h1>How to edit <span class="accent">the CADRE website</span></h1>
+      <p class="lede">The site is a folder of plain web pages kept on GitHub. To change the site you change a file in that folder and save it back to GitHub; the live site updates about a minute later. This guide shows four ways to do that, from "send Elena a Word document" to "edit the code yourself." Pick the one that fits the change you want to make.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="area-overview">
+      <div class="prose">
+        <span class="eyebrow">How the site works</span>
+        <p class="lead-text">There is no content management system to log into. Each page is one file, and GitHub is where the files live.</p>
+        <p>The website you see at <a href="https://cadre-cu.github.io/">cadre-cu.github.io</a> is published directly from a GitHub repository, which is a shared, version-controlled folder. GitHub keeps every past version of every file, so a mistake can always be undone, and it records who changed what and when. When a file in the main copy of the repository changes, GitHub rebuilds the site automatically. Nobody has to press publish.</p>
+        <p>That means every editing method below ends the same way: a changed file is saved to the repository, with a short note describing the change. GitHub calls saving a change a <em>commit</em> and sending it to the shared copy a <em>push</em>. If you use the website editor or Claude, those two steps happen for you.</p>
+        <p>Right now the site is an unlisted draft. Search engines are told not to index it, and it isn't linked from the CU site. Anyone with the address can view it, so it's fine to share with colleagues, but don't post anything that shouldn't be seen outside CADRE yet.</p>
+      </div>
+      <aside class="guide-toc" aria-label="Contents">
+        <h4>On this page</h4>
+        <ol>
+          <li><a href="#which">Which method should I use?</a></li>
+          <li><a href="#word">Option 1: Send a Word storyboard</a></li>
+          <li><a href="#claude">Option 2: Ask Claude Code</a></li>
+          <li><a href="#github">Option 3: Edit on the GitHub website</a></li>
+          <li><a href="#desktop">Option 4: VS Code and GitHub Desktop</a></li>
+          <li><a href="#conventions">House rules for this site</a></li>
+          <li><a href="#files">What each file is</a></li>
+          <li><a href="#glossary">Words you'll run into</a></li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft" id="which">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Choosing</span>
+      <h2>Which method should I use?</h2>
+      <p>Match the tool to the size of the change. You can mix and match; many people will use the first two and never touch the others.</p>
+    </div>
+    <div class="fit">
+      <div class="option">
+        <div class="for">Best for rewriting a whole page or section</div>
+        <h3>Send a Word storyboard</h3>
+        <p>You write the content in Word using a simple section structure; whoever runs Claude Code turns it into the page. No tools to install, nothing to learn. This is how the Classroom Assessment page was revised.</p>
+        <a href="#word">Read how →</a>
+      </div>
+      <div class="option">
+        <div class="for">Best for anything, if you have Claude Code</div>
+        <h3>Ask Claude Code</h3>
+        <p>Describe the change in plain language. Claude edits the file, shows you a preview, and commits and pushes for you. Handles text, layout, new pages, and photos.</p>
+        <a href="#claude">Read how →</a>
+      </div>
+      <div class="option">
+        <div class="for">Best for small text fixes</div>
+        <h3>Edit on the GitHub website</h3>
+        <p>Fix a typo, update a date, swap a link, or add a publication, all in your browser. Nothing to install. You'll see a little HTML around the text, which is fine to ignore.</p>
+        <a href="#github">Read how →</a>
+      </div>
+      <div class="option">
+        <div class="for">Best if you want to edit HTML directly</div>
+        <h3>VS Code and GitHub Desktop</h3>
+        <p>Two free programs that give you a proper editor, a local preview, and a two-click way to commit and push. Worth it if you'll edit regularly.</p>
+        <a href="#desktop">Read how →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="word">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Option 1</span>
+      <h2>Send a Word storyboard.</h2>
+      <p>The lowest-effort path, and the right one when you're rethinking what a page should say rather than tweaking what's there.</p>
+    </div>
+    <ol class="steps">
+      <li><strong>Write the page as a sequence of sections</strong><p>Use a heading for each section in the order you want it on the page. The focus-area pages follow this order: Opening (two or three sentences), What we think good work in this area requires, Projects, What's new, Selected publications, People, Resources. You can drop sections you don't need or add one.</p></li>
+      <li><strong>Give each project a status and a partner</strong><p>Under each project heading, put "Active" or "Completed" on the first line, then a short paragraph. Name the partner or funder in the paragraph. If there's a public link (a report, a task library), paste the address.</p></li>
+      <li><strong>List publications in APA style</strong><p>Full citations, grouped by person if that's how you want them shown. Include a DOI or web address where one exists; it becomes the "Read paper" link.</p></li>
+      <li><strong>For people, give a title and one or two sentences</strong><p>Photos come from CU Boulder profile pages unless you send a better one. Include the address of each person's CU profile if you have it handy.</p></li>
+      <li><strong>Flag anything unconfirmed</strong><p>Put open questions in parentheses, such as "(check with Lorrie)." Anything flagged is left off the page until you confirm it.</p></li>
+      <li><strong>Send the document to Derek or Elena</strong><p>They run it through Claude Code, review the result on the live preview, and share the link back to you for a final look. Turnaround is usually the same day.</p></li>
+    </ol>
+    <div class="callout"><strong>Tip.</strong><p>Write in the voice of the site: short sentences, no jargon that a district leader wouldn't know, and no more than a paragraph per project. The page will be better for it, and the handoff is faster.</p></div>
+  </div>
+</section>
+
+<section class="block block-soft" id="claude">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Option 2</span>
+      <h2>Ask Claude Code.</h2>
+      <p>Claude Code is Anthropic's tool for working on files with an AI assistant. Once it has a copy of the site folder, editing is a conversation.</p>
+    </div>
+    <ol class="steps">
+      <li><strong>Get access to the repository</strong><p>Ask Derek to add your GitHub account to the CADRE-CU organization. If you don't have a GitHub account, create a free one at github.com first, using your CU email.</p></li>
+      <li><strong>Put a copy of the site on your computer</strong><p>Install <a href="https://desktop.github.com/">GitHub Desktop</a>, sign in, choose File, Clone Repository, and pick <code>CADRE-CU/CADRE-CU.github.io</code>. This creates a folder on your computer that stays connected to GitHub. Remember where you put it.</p></li>
+      <li><strong>Open that folder in Claude Code</strong><p>In the Claude desktop app, go to the Code tab and open the folder you just cloned. Claude can now see every page of the site.</p></li>
+      <li><strong>Describe the change</strong><p>Say what you want in ordinary language. For example: "On the Accountability page, add a project card for the ESSER expanded learning evaluation, partner Colorado Department of Education, completed 2025, linking to this report," and paste the link. Or: "Replace Kaitlin Nath's bio with the following." Claude edits the file and can show you a preview of the page before anything is saved.</p></li>
+      <li><strong>Ask Claude to commit and push</strong><p>Say "commit and push this." Claude saves the change to the repository with a short description. The live site updates within a minute or two; reload it to check.</p></li>
+    </ol>
+    <div class="callout"><strong>Things Claude already knows about this site.</strong><p>The card styles, the six focus areas, where photos live, and the rule about bumping the stylesheet version. If you ask for a new page, it will build one that matches the others. If a request would change many pages at once, it will tell you before doing it.</p></div>
+    <div class="callout"><strong>Before you start each session.</strong><p>Open GitHub Desktop and click "Fetch origin" so your copy has everyone else's latest changes. Claude can also do this if you ask it to "pull the latest changes first."</p></div>
+  </div>
+</section>
+
+<section class="block" id="github">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Option 3</span>
+      <h2>Edit on the GitHub website.</h2>
+      <p>For small changes to text you can already see on a page. Nothing to install; you edit in the browser and GitHub saves and publishes.</p>
+    </div>
+    <ol class="steps">
+      <li><strong>Find the page's file</strong><p>Go to <a href="https://github.com/CADRE-CU/CADRE-CU.github.io">github.com/CADRE-CU/CADRE-CU.github.io</a> and click the file for the page you want. The file names match the site: the Accountability page is <code>accountability.html</code>, the homepage is <code>index.html</code>. The table at the bottom of this guide lists them all.</p></li>
+      <li><strong>Click the pencil icon</strong><p>It's at the top right of the file view ("Edit this file"). The file opens in an editor in your browser.</p></li>
+      <li><strong>Find your text</strong><p>Press Ctrl+F (Cmd+F on a Mac) and search for a distinctive phrase from the sentence you want to change. You'll see the text wrapped in HTML tags such as <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>. Change only the words between the tags and leave the tags alone.</p></li>
+      <li><strong>Check it reads correctly</strong><p>Click the "Preview" tab above the editor to see your change rendered. It won't look exactly like the site, but you can confirm the wording and that nothing broke.</p></li>
+      <li><strong>Commit the change</strong><p>Click the green "Commit changes" button. In the box that appears, write a one-line description such as "Update Ben Shear's title," leave "Commit directly to the main branch" selected, and click Commit changes again. That's the save. The live site updates within a minute or two.</p></li>
+    </ol>
+    <div class="callout"><strong>Safe edits and risky ones.</strong><p>Safe: changing words, dates, names, and web addresses inside existing tags; copying an existing <code>&lt;li&gt;…&lt;/li&gt;</code> publication entry and editing the copy. Risky: deleting or adding tags, moving sections, anything involving the stylesheet. If you're unsure, use Option 2 or ask Derek. Every change can be undone, so the worst case is a few minutes of a slightly broken page.</p></div>
+    <div class="callout"><strong>Special characters.</strong><p>In HTML, write <code>&amp;amp;</code> for an ampersand and use real typographic quotes and apostrophes (’ “ ”), which you can paste from Word. Accented letters and the ʻokina are fine as they are.</p></div>
+  </div>
+</section>
+
+<section class="block block-soft" id="desktop">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Option 4</span>
+      <h2>VS Code and GitHub Desktop.</h2>
+      <p>For anyone who wants to edit HTML directly with a real editor and see the result locally before publishing. Both programs are free.</p>
+    </div>
+    <ol class="steps">
+      <li><strong>Install the two programs and clone the repository</strong><p>Install <a href="https://code.visualstudio.com/">Visual Studio Code</a> and <a href="https://desktop.github.com/">GitHub Desktop</a>. In GitHub Desktop, sign in and clone <code>CADRE-CU/CADRE-CU.github.io</code> (File, Clone Repository). This is the same folder Claude Code uses, so the two can share it.</p></li>
+      <li><strong>Fetch before you edit</strong><p>Each time you sit down, click "Fetch origin" in GitHub Desktop so you start from the latest version. If it says there are changes to pull, click Pull.</p></li>
+      <li><strong>Open the folder in VS Code and edit</strong><p>File, Open Folder, choose the cloned folder. Open the page you want from the file list on the left. VS Code colors the HTML so text and tags are easy to tell apart.</p></li>
+      <li><strong>Preview locally</strong><p>Install the free "Live Server" extension in VS Code, then right-click the page and choose "Open with Live Server." The page opens in your browser and refreshes as you save. Video seeking on the CRG page needs a server, which Live Server provides; simply double-clicking the file won't do.</p></li>
+      <li><strong>Commit and push</strong><p>Switch to GitHub Desktop. Your changed files are listed on the left. Type a one-line summary in the box at the bottom left, click "Commit to main," then click "Push origin" at the top. The site updates within a minute or two.</p></li>
+    </ol>
+    <div class="callout"><strong>If GitHub Desktop reports a conflict.</strong><p>Someone else changed the same lines since you fetched. Don't force anything; ask Derek or paste the message into Claude Code, which can resolve it.</p></div>
+  </div>
+</section>
+
+<section class="block" id="conventions">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">House rules</span>
+      <h2>Conventions that keep the site consistent.</h2>
+      <p>Claude Code follows these automatically. If you edit by hand, they're worth knowing.</p>
+    </div>
+    <div class="prose">
+      <h3>After editing the stylesheet, bump the version</h3>
+      <p>Every page links to <code>styles.css?v=20260910o</code>. Browsers cache the stylesheet aggressively, so after any change to <code>styles.css</code>, change that version string on every page (for example to <code>v=20260924a</code>). Otherwise visitors keep seeing the old styles. Most edits never touch the stylesheet; text and card changes live in the page files.</p>
+      <h3>Adding a project card</h3>
+      <p>Copy an existing card block, from <code>&lt;a class="card flat"</code> (or <code>&lt;div class="card flat"</code> if there's no link) to its closing tag, and edit the copy. The first line inside is the meta row: partner on the left, dates or status on the right. Keep descriptions to one paragraph.</p>
+      <h3>Adding a publication</h3>
+      <p>Copy one <code>&lt;li&gt;…&lt;/li&gt;</code> entry in the publication list and edit its four parts: year and type, title, authors, venue with a link. Lists run newest first.</p>
+      <h3>Photos and other files</h3>
+      <p>Headshots go in <code>images/team/</code>, square, about 360 pixels on a side, saved as JPEG. Other images go in <code>images/</code>. Keep files small: a page image should be under 500 KB. Source material that isn't part of the site (Word documents, original logo files, raw video) stays out of the repository; the "Supporting files" folder in Dropbox is the place for it.</p>
+      <h3>The six focus areas appear in three places</h3>
+      <p>The homepage grid, the "Where our work lands" ladder, and every page's footer. Renaming an area or adding one means updating all three, plus the hero sentence on the homepage. That's a job for Option 2.</p>
+      <h3>People</h3>
+      <p>Cards are text-first: name, title, a two- or three-sentence bio, and links to the person's CU profile. A small round headshot appears only when we have a photo. New staff without a CU page yet appear by name only.</p>
+      <h3>At launch</h3>
+      <p>Two things must be removed when the site goes public: the line <code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code> near the top of every page, and the file <code>robots.txt</code>. Until then, search engines ignore the site by design.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block block-soft" id="files">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The folder</span>
+      <h2>What each file is.</h2>
+    </div>
+    <table class="files">
+      <thead><tr><th>File</th><th>What it is</th></tr></thead>
+      <tbody>
+        <tr><td><code>index.html</code></td><td>Homepage: hero, who we are, focus areas, selected projects, team, contact.</td></tr>
+        <tr><td><code>classroom-assessment.html</code></td><td>Focus area page, written from Elena's storyboard.</td></tr>
+        <tr><td><code>educational-measurement.html</code></td><td>Focus area page.</td></tr>
+        <tr><td><code>accountability.html</code></td><td>Focus area page.</td></tr>
+        <tr><td><code>higher-education.html</code></td><td>Focus area page, revised with Oded.</td></tr>
+        <tr><td><code>program-evaluation.html</code></td><td>Focus area page.</td></tr>
+        <tr><td><code>technical-advice.html</code></td><td>Focus area page, with the map of TAC service.</td></tr>
+        <tr><td><code>crg.html</code></td><td>Content-Referenced Growth project page, with the video overview.</td></tr>
+        <tr><td><code>how-to-edit.html</code></td><td>This guide. Not linked from the site.</td></tr>
+        <tr><td><code>styles.css</code></td><td>The one stylesheet shared by every page. Edit with care; bump the version afterward.</td></tr>
+        <tr><td><code>images/</code></td><td>Logo files, team headshots in <code>images/team/</code>, and page images.</td></tr>
+        <tr><td><code>media/</code></td><td>The CRG animation video and its poster frame.</td></tr>
+        <tr><td><code>robots.txt</code>, <code>.nojekyll</code></td><td>Housekeeping. The first keeps search engines away until launch; the second tells GitHub to publish the files as they are.</td></tr>
+        <tr><td><code>README.md</code></td><td>A short technical note shown on the GitHub repository page.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="glossary">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Glossary</span>
+      <h2>Words you'll run into.</h2>
+    </div>
+    <dl class="glossary prose">
+      <dt>Repository (repo)</dt><dd>The shared folder on GitHub that holds the site. Ours is CADRE-CU/CADRE-CU.github.io.</dd>
+      <dt>Clone</dt><dd>Making a copy of the repository on your own computer that stays connected to GitHub.</dd>
+      <dt>Commit</dt><dd>Saving a change to the repository along with a one-line note about what changed. Each commit is a permanent snapshot you can return to.</dd>
+      <dt>Push</dt><dd>Sending your commits from your computer up to GitHub. Publishing happens automatically after a push.</dd>
+      <dt>Pull or fetch</dt><dd>Bringing other people's commits down from GitHub to your copy. Do this before you start editing.</dd>
+      <dt>Main</dt><dd>The name of the primary, published version of the files. All edits in this guide go straight to main.</dd>
+      <dt>GitHub Pages</dt><dd>GitHub's free hosting, which turns the repository into the website at cadre-cu.github.io.</dd>
+      <dt>HTML</dt><dd>The text format web pages are written in. Words wrapped in tags such as <code>&lt;p&gt;</code>. You change the words, not the tags.</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container">
+    <div>
+      <h2>Stuck, or not sure which option fits?</h2>
+      <p>Email Derek or Elena with what you'd like changed. A sentence and a link is enough; the change is usually live the same day.</p>
+    </div>
+    <div>
+      <a class="btn btn-gold" href="mailto:cadre@colorado.edu">Email CADRE</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-bottom">
+      <span>CADRE website editing guide · Updated September 2026</span>
+      <span><a href="index.html">Back to the site</a> · <a href="https://github.com/CADRE-CU/CADRE-CU.github.io">Repository</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
