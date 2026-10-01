@@ -1297,3 +1297,8 @@ button.btn { font-family: inherit; }
 
 /* Homepage team with seven people on one row */
 .team-grid.seven { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1.5rem 1.25rem; }
+
+/* Standalone expandable list of additional publications (below a people grid) */
+.card-pubs.more-pubs { margin-top: 2rem; background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--cu-gold); padding: 0.4rem 1.4rem 1rem; max-width: 900px; }
+.card-pubs.more-pubs summary { padding-top: 0.85rem; padding-bottom: 0.35rem; }
+.card-pubs.more-pubs summary::after { top: 0.7rem; }
