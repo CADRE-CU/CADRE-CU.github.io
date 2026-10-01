@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260910o">
+<link rel="stylesheet" href="styles.css?v=20261001a">
 <style>
   .guide-toc { background: #fff; border: 1px solid var(--rule); border-left: 4px solid var(--cu-gold); padding: 1.25rem 1.5rem; }
   .guide-toc h4 { font-family: var(--serif); margin: 0 0 0.6rem; font-size: 1.05rem; }
@@ -231,17 +231,21 @@
     </div>
     <div class="prose">
       <h3>After editing the stylesheet, bump the version</h3>
-      <p>Every page links to <code>styles.css?v=20260910o</code>. Browsers cache the stylesheet aggressively, so after any change to <code>styles.css</code>, change that version string on every page (for example to <code>v=20260924a</code>). Otherwise visitors keep seeing the old styles. Most edits never touch the stylesheet; text and card changes live in the page files.</p>
+      <p>Every page links to <code>styles.css?v=20261001a</code>. Browsers cache the stylesheet aggressively, so after any change to <code>styles.css</code>, change that version string on every page (for example to <code>v=20261015a</code>). Otherwise visitors keep seeing the old styles. Most edits never touch the stylesheet; text and card changes live in the page files.</p>
       <h3>Adding a project card</h3>
       <p>Copy an existing card block, from <code>&lt;a class="card flat"</code> (or <code>&lt;div class="card flat"</code> if there's no link) to its closing tag, and edit the copy. The first line inside is the meta row: partner on the left, dates or status on the right. Keep descriptions to one paragraph.</p>
       <h3>Adding a publication</h3>
       <p>Copy one <code>&lt;li&gt;…&lt;/li&gt;</code> entry in the publication list and edit its four parts: year and type, title, authors, venue with a link. Lists run newest first.</p>
       <h3>Photos and other files</h3>
       <p>Headshots go in <code>images/team/</code>, square, about 360 pixels on a side, saved as JPEG. Other images go in <code>images/</code>. Keep files small: a page image should be under 500 KB. Source material that isn't part of the site (Word documents, original logo files, raw video) stays out of the repository; the "Supporting files" folder in Dropbox is the place for it.</p>
-      <h3>The six focus areas appear in three places</h3>
-      <p>The homepage grid, the "Where our work lands" ladder, and every page's footer. Renaming an area or adding one means updating all three, plus the hero sentence on the homepage. That's a job for Option 2.</p>
+      <h3>The five focus areas appear in three places</h3>
+      <p>The homepage grid, the "Who uses our work" ladder, and every page's footer, always in this order: Classroom Assessment, Educational Accountability, Educational Measurement, Higher Education, Program Evaluation. Renaming an area or adding one means updating all three, plus the hero sentence on the homepage. That's a job for Option 2. A sixth area, Technical Advice, is hidden for now: its page file is kept and its homepage card is commented out so it can be restored.</p>
+      <h3>People come first on focus-area pages</h3>
+      <p>Each focus-area page runs: overview, people, research strands, projects, methods. Publications are not a separate section. They sit inside each person's card under an expandable "Selected publications" list, and a co-authored paper appears under every co-author who has a card on that page.</p>
+      <h3>Projects show three at a time</h3>
+      <p>If a page lists more than three projects, the first three are visible and a "See more projects" button reveals the rest. To feature a project, move its card into the first three.</p>
       <h3>People</h3>
-      <p>Cards are text-first: name, title, a two- or three-sentence bio, and links to the person's CU profile. A small round headshot appears only when we have a photo. New staff without a CU page yet appear by name only.</p>
+      <p>Cards are text-first: name, title, a two- or three-sentence bio, and a link to the person's School of Education profile (colorado.edu/education/…). A small round headshot appears only when we have a photo. New staff without a CU page yet appear by name only.</p>
       <h3>At launch</h3>
       <p>Two things must be removed when the site goes public: the line <code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code> near the top of every page, and the file <code>robots.txt</code>. Until then, search engines ignore the site by design.</p>
     </div>
@@ -263,7 +267,7 @@
         <tr><td><code>accountability.html</code></td><td>Focus area page.</td></tr>
         <tr><td><code>higher-education.html</code></td><td>Focus area page, revised with Oded.</td></tr>
         <tr><td><code>program-evaluation.html</code></td><td>Focus area page.</td></tr>
-        <tr><td><code>technical-advice.html</code></td><td>Focus area page, with the map of TAC service.</td></tr>
+        <tr><td><code>technical-advice.html</code></td><td>Technical Advice page, with the map of TAC service. Hidden for now: not linked from the site, kept for later.</td></tr>
         <tr><td><code>crg.html</code></td><td>Content-Referenced Growth project page, with the video overview.</td></tr>
         <tr><td><code>how-to-edit.html</code></td><td>This guide. Not linked from the site.</td></tr>
         <tr><td><code>styles.css</code></td><td>The one stylesheet shared by every page. Edit with care; bump the version afterward.</td></tr>
@@ -310,7 +314,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="foot-bottom">
-      <span>CADRE website editing guide · Updated September 2026</span>
+      <span>CADRE website editing guide · Updated October 2026</span>
       <span><a href="index.html">Back to the site</a> · <a href="https://github.com/CADRE-CU/CADRE-CU.github.io">Repository</a></span>
     </div>
   </div>

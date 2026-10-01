@@ -1255,3 +1255,45 @@ footer.site-footer a:hover { color: var(--cu-gold); }
 /* Flat card meta row: partner left, date right */
 .card-partner { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem 1rem; flex-wrap: wrap; }
 .card-when { font-weight: 500; color: var(--ink-3); white-space: nowrap; }
+
+/* ---- October 2026: people-first strand pages ---- */
+/* Expandable publication list nested inside a person card */
+.faculty-grid { align-items: start; }
+.card-pubs { margin-top: 1rem; border-top: 1px solid var(--rule); }
+.card-pubs summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding: 0.75rem 1.75rem 0.15rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cu-gold-dark);
+}
+.card-pubs summary::-webkit-details-marker { display: none; }
+.card-pubs summary::after {
+  content: "+";
+  position: absolute;
+  right: 0.1rem;
+  top: 0.55rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.card-pubs[open] summary::after { content: "–"; }
+.card-pubs summary:hover { color: var(--ink); }
+.card-pubs .pub-list { margin-top: 0.5rem; }
+.card-pubs .pub-list li { padding: 0.8rem 0; gap: 0.25rem; }
+.card-pubs .pub-list li:first-child { border-top: 0; }
+.card-pubs .pub-list li:last-child { border-bottom: 0; padding-bottom: 0.25rem; }
+.card-pubs .pub-list .pub-title { font-size: 0.98rem; }
+.card-pubs .pub-list .pub-authors, .card-pubs .pub-list .pub-venue { font-size: 0.88rem; }
+.lead-person .card-pubs { max-width: 760px; }
+
+/* Project rows: three tiles visible, the rest behind "See more" */
+.card-row.limit3:not(.expanded) > :nth-child(n+4) { display: none; }
+button.btn { font-family: inherit; }
+
+/* Homepage team with seven people on one row */
+.team-grid.seven { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1.5rem 1.25rem; }
